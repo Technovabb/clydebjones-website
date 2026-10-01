@@ -119,6 +119,7 @@ def layout(page, body, root):
   <meta property="og:title" content="{title}">
   <meta property="og:description" content="{page["description"]}">
   <meta property="og:type" content="website">
+  <meta property="og:image" content="https://technovabb.com/clydebjones-website/assets/img/hero-fleet-1400.jpg">
   <link rel="icon" href="{FAVICON}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

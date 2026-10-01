@@ -177,7 +177,7 @@ strong { font-weight: 700; }
 /* ---------- Home hero ---------- */
 .hero {
   position: relative; color: var(--white); overflow: hidden;
-  /* Placeholder: swap for the client's fleet photo (assets/img/hero-fleet.jpg) behind this gradient */
+  /* Fallback when there is no photo. The home page uses .has-photo (below). */
   background:
     radial-gradient(ellipse 60% 70% at 85% 30%, rgba(201, 164, 101, 0.16), transparent 70%),
     radial-gradient(ellipse 80% 90% at 70% 60%, #6b1a30 0%, transparent 70%),
@@ -210,6 +210,30 @@ strong { font-weight: 700; }
   .tribute-search .btn { width: 100%; border-radius: var(--radius-sm); }
   .hero { padding: 48px 0 130px; }
   .hero-art { display: none; }
+}
+
+/* Hero with the fleet photo */
+.hero.has-photo { background: var(--burgundy-950); padding: 120px 0 190px; min-height: 680px; display: flex; align-items: center; isolation: isolate; }
+.hero.has-photo > .wrap { width: min(100% - 32px, var(--wrap)); }
+.hero-photo { position: absolute; top: 0; bottom: 0; right: 0; left: 30%; z-index: -2; display: block; }
+.hero-photo img { width: 100%; height: 100%; object-fit: cover; object-position: 55% 55%;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 30%); mask-image: linear-gradient(90deg, transparent 0%, #000 30%); }
+.hero.has-photo::before {
+  content: ""; position: absolute; inset: 0; z-index: -1;
+  background:
+    linear-gradient(90deg, rgba(42, 6, 16, 0.55) 0%, rgba(42, 6, 16, 0.35) 45%, rgba(42, 6, 16, 0) 70%),
+    linear-gradient(180deg, rgba(42, 6, 16, 0.3) 0%, rgba(42, 6, 16, 0) 25%, rgba(42, 6, 16, 0) 60%, rgba(42, 6, 16, 0.9) 100%);
+}
+.hero.has-photo h1 { text-shadow: 0 2px 24px rgba(0, 0, 0, 0.35); }
+.hero.has-photo .hero-lead { max-width: 44ch; }
+@media (min-width: 1600px) { .hero-photo { left: 36%; } }
+@media (max-width: 899px) {
+  /* Phone and tablet: the car at the top, the words below it (as in the concept) */
+  .hero.has-photo { display: block; min-height: 0; padding: calc(min(66vw, 540px) - 40px) 0 150px; }
+  .hero-photo { left: 0; bottom: auto; height: min(66vw, 540px); }
+  .hero-photo img { object-position: 54% 62%;
+    -webkit-mask-image: linear-gradient(180deg, #000 55%, transparent 100%); mask-image: linear-gradient(180deg, #000 55%, transparent 100%); }
+  .hero.has-photo::before { background: linear-gradient(180deg, rgba(42, 6, 16, 0.25) 0%, rgba(42, 6, 16, 0) 25%); }
 }
 
 /* Help now cards (overlap the hero) */

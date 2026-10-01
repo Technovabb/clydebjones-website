@@ -4,19 +4,12 @@ description: Clyde B. Jones Funeral Home, Top Rock, Christ Church, Barbados. Thr
 nav: home
 -->
     <!-- 1. Call and search -->
-    <section class="hero" aria-labelledby="hero-title">
-      <!-- Decorative: a lit candle with three beams, from the meaning of the CBJ logo -->
-      <svg class="hero-art" viewBox="0 0 400 400" aria-hidden="true" focusable="false">
-        <g fill="none" stroke="currentColor" stroke-linecap="round">
-          <circle cx="200" cy="170" r="70" stroke-width="1"/>
-          <circle cx="200" cy="170" r="120" stroke-width="1" opacity=".7"/>
-          <circle cx="200" cy="170" r="175" stroke-width="1" opacity=".45"/>
-          <path d="M200 92V20M168 100 128 38M232 100l40-62" stroke-width="3"/>
-          <path d="M200 120c14 17 20 28 20 39a20 20 0 0 1-40 0c0-11 6-22 20-39z" stroke-width="3"/>
-          <rect x="176" y="196" width="48" height="168" rx="4" stroke-width="3"/>
-          <path d="M150 364h100" stroke-width="3"/>
-        </g>
-      </svg>
+    <section class="hero has-photo" aria-labelledby="hero-title">
+      <!-- Photo from the client's own website (their July 2026 photo shoot). Confirm permission and photographer credit before launch. -->
+      <picture class="hero-photo">
+        <source type="image/webp" srcset="{{root}}assets/img/hero-fleet-800.webp 800w, {{root}}assets/img/hero-fleet-1400.webp 1400w, {{root}}assets/img/hero-fleet-2400.webp 2400w" sizes="100vw">
+        <img src="{{root}}assets/img/hero-fleet-1400.jpg" srcset="{{root}}assets/img/hero-fleet-800.jpg 800w, {{root}}assets/img/hero-fleet-1400.jpg 1400w, {{root}}assets/img/hero-fleet-2400.jpg 2400w" sizes="100vw" width="2400" height="1600" alt="A Clyde B. Jones hearse in the company's burgundy" fetchpriority="high" decoding="async">
+      </picture>
       <div class="wrap">
         <p class="eyebrow">Est. 1948 · Top Rock, Christ Church</p>
         <h1 id="hero-title">Where honour dwells and service excels.</h1>
