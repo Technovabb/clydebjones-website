@@ -1,0 +1,284 @@
+<!--
+title: Home
+description: Clyde B. Jones Funeral Home, Top Rock, Christ Church, Barbados. Three generations of the Jones family caring for Barbadian families since 1948. Call (246) 428-9332.
+nav: home
+-->
+    <!-- 1. Call and search -->
+    <section class="hero" aria-labelledby="hero-title">
+      <!-- Decorative: a lit candle with three beams, from the meaning of the CBJ logo -->
+      <svg class="hero-art" viewBox="0 0 400 400" aria-hidden="true" focusable="false">
+        <g fill="none" stroke="currentColor" stroke-linecap="round">
+          <circle cx="200" cy="170" r="70" stroke-width="1"/>
+          <circle cx="200" cy="170" r="120" stroke-width="1" opacity=".7"/>
+          <circle cx="200" cy="170" r="175" stroke-width="1" opacity=".45"/>
+          <path d="M200 92V20M168 100 128 38M232 100l40-62" stroke-width="3"/>
+          <path d="M200 120c14 17 20 28 20 39a20 20 0 0 1-40 0c0-11 6-22 20-39z" stroke-width="3"/>
+          <rect x="176" y="196" width="48" height="168" rx="4" stroke-width="3"/>
+          <path d="M150 364h100" stroke-width="3"/>
+        </g>
+      </svg>
+      <div class="wrap">
+        <p class="eyebrow">Est. 1948 · Top Rock, Christ Church</p>
+        <h1 id="hero-title">Where honour dwells and service excels.</h1>
+        <p class="hero-lead">Since 1948, three generations of the Jones family have cared for Barbadian families, at home and abroad.</p>
+        <form class="tribute-search" role="search" action="{{root}}tributes/" method="get">
+          <svg class="icon" aria-hidden="true"><use href="#i-search"/></svg>
+          <label class="sr-only" for="hero-q">Search tributes by name</label>
+          <input id="hero-q" name="q" type="search" placeholder="Search tributes by name" autocomplete="off">
+          <button class="btn btn-primary" type="submit">Find a tribute</button>
+        </form>
+        <p class="hero-call"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg> Need us now? Call <a href="tel:+12464289332">(246) 428-9332</a></p>
+      </div>
+    </section>
+
+    <!-- 2. Help now -->
+    <section class="help-cards" aria-label="How we can help">
+      <div class="wrap">
+        <ul>
+          <li>
+            <a class="help-card is-urgent" href="{{root}}arrange-a-funeral/#when-a-death-occurs">
+              <span class="badge"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg></span>
+              <h2>A death has just occurred</h2>
+              <p>Call us first. We will gently guide you through what to do next, at home, in hospital or overseas.</p>
+              <span class="link-arrow">What to do first</span>
+            </a>
+          </li>
+          <li>
+            <a class="help-card" href="{{root}}arrange-a-funeral/">
+              <span class="badge"><svg class="icon" aria-hidden="true"><use href="#i-people"/></svg></span>
+              <h2>Arrange a funeral</h2>
+              <p>Sit down with one of our funeral directors and plan a farewell that fits your loved one's wishes and your budget.</p>
+              <span class="link-arrow">Arrange a funeral</span>
+            </a>
+          </li>
+          <li>
+            <a class="help-card" href="{{root}}plan-ahead/">
+              <span class="badge"><svg class="icon" aria-hidden="true"><use href="#i-leaf"/></svg></span>
+              <h2>Plan ahead</h2>
+              <p>Write down your wishes now, and spare your family hard decisions later.</p>
+              <span class="link-arrow">Start planning</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 3. Recent tributes (sample data only: never real names in this public preview) -->
+    <section class="section" aria-labelledby="tributes-title">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Tributes</p>
+            <h2 id="tributes-title">Recent tributes</h2>
+            <p class="lead">Read the obituary, see the service details, watch the livestream and leave a message for the family.</p>
+          </div>
+          <a class="btn btn-outline" href="{{root}}tributes/">All tributes</a>
+        </div>
+        <ul class="tribute-grid">
+          <li>
+            <article class="tribute-card">
+              <div class="tribute-photo"><span class="tag is-live">Livestream</span><svg aria-hidden="true"><use href="#i-dove"/></svg></div>
+              <div class="tribute-body">
+                <h3><a href="{{root}}tributes/name-of-loved-one/">Name of Loved One</a></h3>
+                <p class="tribute-meta">1941 – 2026 · Christ Church</p>
+                <p class="tribute-service">Funeral: Saturday 10 October, 10:00 a.m.</p>
+                <div class="tribute-actions">
+                  <a class="chip-btn" href="{{root}}tributes/name-of-loved-one/#livestream"><svg class="icon" aria-hidden="true"><use href="#i-video"/></svg> Watch</a>
+                  <a class="chip-btn" href="{{root}}tributes/name-of-loved-one/#flowers"><svg class="icon" aria-hidden="true"><use href="#i-flower"/></svg> Flowers</a>
+                  <button class="chip-btn" type="button" data-share="{{root}}tributes/name-of-loved-one/" data-share-title="Name of Loved One"><svg class="icon" aria-hidden="true"><use href="#i-share"/></svg> Share</button>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="tribute-card">
+              <div class="tribute-photo"><svg aria-hidden="true"><use href="#i-dove"/></svg></div>
+              <div class="tribute-body">
+                <h3><a href="{{root}}tributes/name-of-loved-one/">Name of Loved One</a></h3>
+                <p class="tribute-meta">1938 – 2026 · St. Philip</p>
+                <p class="tribute-service">Funeral: Friday 9 October, 2:00 p.m.</p>
+                <div class="tribute-actions">
+                  <a class="chip-btn" href="{{root}}tributes/name-of-loved-one/#livestream"><svg class="icon" aria-hidden="true"><use href="#i-video"/></svg> Watch</a>
+                  <a class="chip-btn" href="{{root}}tributes/name-of-loved-one/#flowers"><svg class="icon" aria-hidden="true"><use href="#i-flower"/></svg> Flowers</a>
+                  <button class="chip-btn" type="button" data-share="{{root}}tributes/name-of-loved-one/" data-share-title="Name of Loved One"><svg class="icon" aria-hidden="true"><use href="#i-share"/></svg> Share</button>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="tribute-card">
+              <div class="tribute-photo"><svg aria-hidden="true"><use href="#i-dove"/></svg></div>
+              <div class="tribute-body">
+                <h3><a href="{{root}}tributes/name-of-loved-one/">Name of Loved One</a></h3>
+                <p class="tribute-meta">1950 – 2026 · St. Michael</p>
+                <p class="tribute-service">Funeral: Monday 5 October, 11:00 a.m.</p>
+                <div class="tribute-actions">
+                  <a class="chip-btn" href="{{root}}tributes/name-of-loved-one/#livestream"><svg class="icon" aria-hidden="true"><use href="#i-video"/></svg> Watch</a>
+                  <a class="chip-btn" href="{{root}}tributes/name-of-loved-one/#flowers"><svg class="icon" aria-hidden="true"><use href="#i-flower"/></svg> Flowers</a>
+                  <button class="chip-btn" type="button" data-share="{{root}}tributes/name-of-loved-one/" data-share-title="Name of Loved One"><svg class="icon" aria-hidden="true"><use href="#i-share"/></svg> Share</button>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="tribute-card">
+              <div class="tribute-photo"><span class="tag">Recording available</span><svg aria-hidden="true"><use href="#i-dove"/></svg></div>
+              <div class="tribute-body">
+                <h3><a href="{{root}}tributes/name-of-loved-one/">Name of Loved One</a></h3>
+                <p class="tribute-meta">1944 – 2026 · St. James</p>
+                <p class="tribute-service">Funeral held Saturday 26 September</p>
+                <div class="tribute-actions">
+                  <a class="chip-btn" href="{{root}}tributes/name-of-loved-one/#livestream"><svg class="icon" aria-hidden="true"><use href="#i-play"/></svg> Replay</a>
+                  <a class="chip-btn" href="{{root}}tributes/name-of-loved-one/#condolences"><svg class="icon" aria-hidden="true"><use href="#i-book"/></svg> Condolences</a>
+                  <button class="chip-btn" type="button" data-share="{{root}}tributes/name-of-loved-one/" data-share-title="Name of Loved One"><svg class="icon" aria-hidden="true"><use href="#i-share"/></svg> Share</button>
+                </div>
+              </div>
+            </article>
+          </li>
+        </ul>
+
+        <div class="signup">
+          <div>
+            <h3>Get tribute notices by email</h3>
+            <p>We will email you when a new tribute is posted. You can stop at any time.</p>
+          </div>
+          <form data-preview-form>
+            <label class="sr-only" for="signup-email">Your email address</label>
+            <input id="signup-email" type="email" name="email" placeholder="Your email address" autocomplete="email" required>
+            <button class="btn btn-primary" type="submit">Sign up</button>
+            <p class="form-status" role="status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Services -->
+    <section class="section section-alt" aria-labelledby="services-title">
+      <div class="wrap">
+        <div class="section-head center">
+          <p class="eyebrow">Our services</p>
+          <h2 id="services-title">Every service, clearly explained</h2>
+          <p class="lead">From the first phone call to the years after, we take care of every detail, so your family can say goodbye well.</p>
+        </div>
+        {{> service-grid}}
+        <p style="text-align:center;margin-top:32px"><a class="btn btn-outline" href="{{root}}services/">See all our services</a></p>
+      </div>
+    </section>
+
+    <!-- 5. Our story and team -->
+    <section class="section section-dark" aria-labelledby="story-title">
+      <div class="wrap">
+        <div class="grid-2">
+          <div>
+            <p class="eyebrow">Since 1948</p>
+            <h2 id="story-title">Three generations. One promise.</h2>
+            <p class="lead">On 13 October 1948, Clyde B. Jones and his wife Alma took their first call. The next day, they directed their first funeral.</p>
+            <p>Mr. Jones was 25. He set a standard of care, honesty and dignity that his children and grandchildren still keep today. In 1994 the family chose burgundy as the company's colour, to move away from the traditional black.</p>
+            <div class="btn-row" style="margin-top:28px">
+              <a class="btn btn-light" href="{{root}}about/">Read our story</a>
+              <a class="btn btn-ghost-light" href="{{root}}about/#team">Meet the team</a>
+            </div>
+          </div>
+          <div class="photo-pair">
+            <!-- TODO: founder photo and team photo from the client -->
+            <div class="photo-slot"><div><svg aria-hidden="true"><use href="#i-camera"/></svg>Founder's photo<br>Clyde B. Jones, BCH, JP</div></div>
+            <div class="photo-slot"><div><svg aria-hidden="true"><use href="#i-camera"/></svg>Team photo<br>Team Clyde B. Jones</div></div>
+          </div>
+        </div>
+        <div class="stats">
+          <div class="stat"><strong>1948</strong><span>Founded in Christ Church</span></div>
+          <div class="stat"><strong>3</strong><span>Generations of the Jones family</span></div>
+          <div class="stat"><strong>Own fleet</strong><span>Hearse, limousine and town cars</span></div>
+          <div class="stat"><strong>On site</strong><span>Our own mortuary, for dignified care</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Family overseas -->
+    <section class="section" aria-labelledby="overseas-title">
+      <div class="wrap">
+        <div class="grid-2">
+          <div>
+            <p class="eyebrow">Family overseas</p>
+            <h2 id="overseas-title">Be there, wherever you are.</h2>
+            <p class="lead">Many Barbadian families are spread across the world. We make sure no one is left out.</p>
+            <ul class="overseas-list" style="margin-top:28px">
+              <li>
+                <span class="badge"><svg class="icon" aria-hidden="true"><use href="#i-video"/></svg></span>
+                <div><h3>Watch the service live</h3><p>The livestream plays on the tribute page, and the recording stays there afterwards.</p></div>
+              </li>
+              <li>
+                <span class="badge"><svg class="icon" aria-hidden="true"><use href="#i-plane"/></svg></span>
+                <div><h3>Bringing a loved one home</h3><p>If a death happens abroad, call us. We work with the funeral home there and bring your loved one home to Barbados.</p></div>
+              </li>
+              <li>
+                <span class="badge"><svg class="icon" aria-hidden="true"><use href="#i-book"/></svg></span>
+                <div><h3>Send your love from afar</h3><p>Leave a message in the condolence book, send flowers, and share the tribute with family.</p></div>
+              </li>
+            </ul>
+          </div>
+          <div class="phone-callout">
+            <p class="eyebrow">Calling from the USA or Canada?</p>
+            <a class="big-phone" href="tel:+17162622407">(716) 262-2407</a>
+            <p>Call our USA &amp; Canada line and speak to our team in Barbados.</p>
+            <a class="btn btn-light" href="{{root}}services/repatriation/">How repatriation works</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Plan ahead -->
+    <section class="section section-alt" aria-labelledby="plan-title">
+      <div class="wrap">
+        <div class="grid-2">
+          <div>
+            <p class="eyebrow">Plan ahead</p>
+            <h2 id="plan-title">Your wishes, written down. Your family, spared the guesswork.</h2>
+            <p class="lead">“Is this what they would have wanted?” Planning ahead answers that question for your family.</p>
+            <ul class="check-list">
+              <li>Choose the service, music, readings and resting place you want.</li>
+              <li>Pay in full, pay in instalments, or simply keep your plan on file with us.</li>
+              <li>Once fully paid, our prices for the services you chose are locked in.</li>
+            </ul>
+            <div class="btn-row" style="margin-top:24px">
+              <a class="btn btn-outline" href="{{root}}plan-ahead/">Why plan ahead</a>
+              <a class="link-arrow" href="https://www.clydebjonesfuneralhome.com/_files/ugd/62ab3f_62cd09dbd7da42af9a6900f08a2e39d6.pdf" target="_blank" rel="noopener">Download our Pre-Planning Guide (PDF)</a>
+            </div>
+          </div>
+          <div class="form-card">
+            <h3>Start your plan</h3>
+            <p class="muted">Leave your details and one of our funeral co-ordinators will call you to set up a meeting.</p>
+            {{> plan-form}}
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. A family's words -->
+    <section class="section section-white" aria-labelledby="quote-title">
+      <div class="wrap">
+        <h2 id="quote-title" class="sr-only">A family's words</h2>
+        <!-- From a thank-you letter on the client's current site. Ask the family's permission before naming them. -->
+        <figure class="quote">
+          <span class="quote-mark" aria-hidden="true">“</span>
+          <blockquote>
+            <p>My family and I are truly grateful for all the awesome support given to us in this most difficult period. Thank you again for making a difficult time a memorable experience.</p>
+          </blockquote>
+          <figcaption>A family we were honoured to serve</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 9. Contact -->
+    <section class="section" aria-labelledby="contact-title">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2 id="contact-title">We are here when you need us</h2>
+          </div>
+          <a class="btn btn-outline" href="{{root}}contact/">All contact details</a>
+        </div>
+        {{> contact-cards}}
+      </div>
+    </section>

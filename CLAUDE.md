@@ -19,8 +19,9 @@ This is the website for **Clyde B. Jones Funeral Home Co. Ltd.**, built by **Tec
   - Client burgundy `#7a0f2e`.
   - Deep burgundy `#3d0a16` and `#2a0610`.
   - Cream `#fbf8f4`.
-  - Gold labels `#9a7437` and `#c9a465`.
-- Type: Cormorant Garamond for headings, Source Sans 3 for body text, at 17px or larger.
+  - Gold labels: `#82602a` on light backgrounds (passes contrast), `#c9a465` on burgundy.
+- Type: Cormorant Garamond for headings, Figtree for body text, at 18px or larger. (Figtree replaced Source Sans 3 in Oct 2026 so the site does not look like the Two Sons site.)
+- Look: rounded cards and pill buttons, gold eyebrow labels with no rule line. Keep it different from the Two Sons and Sterling sites.
 - **Phone first.** Call, WhatsApp, Tributes and Directions sit fixed at the bottom of every phone screen. The number is in the top bar of every page.
 - Large text and strong contrast for older visitors. Keep the keyboard focus visible, and give every control a label.
 - Use the client's CBJ logo when they send the file. The current mark is a placeholder.
@@ -46,17 +47,15 @@ This is the website for **Clyde B. Jones Funeral Home Co. Ltd.**, built by **Tec
 - **Resources:** FAQs, National Insurance, grief support, forms.
 - **Contact:** tap to call, after-hours line, map and hours, contact form.
 
+## How the site is built
+- Page text: `src/pages/`. Shared blocks: `src/partials/`. Header, footer and phone bar: `tools/build.py`.
+- Run `python3 tools/build.py` after any change, and commit `src/` and the built pages together.
+- Never hand-edit a built `index.html`. The build overwrites it.
+- Sample tribute data: `assets/js/tributes-sample.js`.
+- All page text was drawn from the client's current site and their Pre-Planning & Bereavement Guide (PDF), rewritten in plain words. It is a draft for the family's approval.
+
 ## Homepage, top to bottom
-1. **Call and search.** Done.
-2. **Help now cards.** Done.
-3. **Recent tributes.** Started, with sample cards.
-4. **Services.** Grid of 8.
-5. **Our story and team.** "Three generations. One promise."
-6. **Family overseas.** "Be there, wherever you are."
-7. **Plan ahead.** Short form and the guide.
-8. **A family's words.**
-9. **Contact.**
-10. **Footer.** Done.
+All 10 sections from the concept are built: call and search, help now cards, recent tributes with email sign-up, services, our story and team, family overseas, plan ahead, a family's words, contact, footer.
 
 ## Rules
 - **Sample tribute names only** ("Name of Loved One"). Don't use real tribute photos or obituaries until the client approves.
