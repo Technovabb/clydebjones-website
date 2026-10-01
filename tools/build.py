@@ -83,15 +83,6 @@ ICONS = """
   <symbol id="i-arrow-left" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M19 12H5M12 19l-7-7 7-7"/></symbol>
 </svg>"""
 
-# Placeholder mark until the client sends the original CBJ logo file.
-BRAND_MARK = ('<svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">'
-              '<circle cx="20" cy="20" r="18.5" fill="none" stroke="currentColor" stroke-width="1.5"/>'
-              '<text x="20" y="24.8" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" '
-              'font-size="14" font-weight="600" fill="currentColor">CBJ</text></svg>')
-
-FAVICON = ("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E"
-           "%3Ccircle cx='20' cy='20' r='20' fill='%237a0f2e'/%3E%3Ctext x='20' y='25' text-anchor='middle' "
-           "font-family='Georgia,serif' font-size='14' fill='%23fff'%3ECBJ%3C/text%3E%3C/svg%3E")
 
 
 def layout(page, body, root):
@@ -120,7 +111,8 @@ def layout(page, body, root):
   <meta property="og:description" content="{page["description"]}">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://technovabb.com/clydebjones-website/assets/img/hero-fleet-1400.jpg">
-  <link rel="icon" href="{FAVICON}">
+  <link rel="icon" type="image/png" href="{root}assets/img/logo/favicon-64.png">
+  <link rel="apple-touch-icon" href="{root}assets/img/logo/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Figtree:wght@400;600;700;800&display=swap" rel="stylesheet">
@@ -149,8 +141,8 @@ def layout(page, body, root):
   <header class="site-header">
     <div class="wrap">
       <a class="brand" href="{root}" aria-label="{SITE_NAME}, home page">
-        <!-- Placeholder mark: replace with the client's CBJ logo file when it arrives -->
-        {BRAND_MARK}
+        <!-- CBJ mark cut from the logo on the client's current website. Swap for their original file when it arrives. -->
+        <img class="brand-mark" src="{root}assets/img/logo/cbj-mark.png" width="154" height="200" alt="">
         <span>
           <span class="brand-name">Clyde B. Jones</span>
           <span class="brand-sub">Funeral Home · Est. 1948</span>
@@ -175,6 +167,7 @@ def layout(page, body, root):
     <div class="wrap">
       <div class="footer-grid">
         <div class="footer-brand">
+          <img class="footer-mark" src="{root}assets/img/logo/cbj-mark-white.png" width="154" height="200" alt="">
           <p class="brand-name">Clyde B. Jones Funeral Home Co. Ltd.</p>
           <p class="motto">“Where honour dwells and service excels.”</p>
           <p>Top Rock, Christ Church BB15027<br>Barbados<br>Serving families since 13 October 1948</p>

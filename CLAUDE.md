@@ -24,7 +24,7 @@ This is the website for **Clyde B. Jones Funeral Home Co. Ltd.**, built by **Tec
 - Look: rounded cards and pill buttons, gold eyebrow labels with no rule line. Keep it different from the Two Sons and Sterling sites.
 - **Phone first.** Call, WhatsApp, Tributes and Directions sit fixed at the bottom of every phone screen. The number is in the top bar of every page.
 - Large text and strong contrast for older visitors. Keep the keyboard focus visible, and give every control a label.
-- Use the client's CBJ logo when they send the file. The current mark is a placeholder.
+- The CBJ logo in `assets/img/logo/` was taken from the client's current website (Oct 2026). Swap in their original file (SVG or high-res) when it arrives.
 
 ## Sitemap (8 sections)
 - **Tributes (the core):**
