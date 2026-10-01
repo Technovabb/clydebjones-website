@@ -1,7 +1,21 @@
+/*!
+ * Clyde B. Jones Funeral Home website: DESIGN PREVIEW
+ * Design, layout and code (c) 2026 Tech Nova Barbados Limited. All rights reserved.
+ * Built by Tech Nova Barbados Limited, https://technovabb.com
+ * This preview is not licensed for use, copying or publication by anyone,
+ * including the client, until Tech Nova hands the site over in writing.
+ * Client text, logo and photos remain the property of Clyde B. Jones Funeral Home Co. Ltd.
+ */
 /* Clyde B. Jones Funeral Home: small helpers for the design preview.
    Everything works without this file; it only adds convenience. */
 (function () {
   'use strict';
+
+  // Tech Nova watermark in the browser console
+  if (window.console) {
+    console.log('%cTech Nova Barbados Limited', 'color:#7a0f2e;font-size:16px;font-weight:bold');
+    console.log('Design preview. Design and code (c) 2026 Tech Nova Barbados Limited. All rights reserved. Not licensed for reuse. https://technovabb.com');
+  }
 
   // ---------- Phone menu ----------
   var toggle = document.querySelector('.menu-toggle');

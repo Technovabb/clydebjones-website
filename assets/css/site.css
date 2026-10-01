@@ -1,3 +1,11 @@
+/*!
+ * Clyde B. Jones Funeral Home website: DESIGN PREVIEW
+ * Design, layout and code (c) 2026 Tech Nova Barbados Limited. All rights reserved.
+ * Built by Tech Nova Barbados Limited, https://technovabb.com
+ * This preview is not licensed for use, copying or publication by anyone,
+ * including the client, until Tech Nova hands the site over in writing.
+ * Client text, logo and photos remain the property of Clyde B. Jones Funeral Home Co. Ltd.
+ */
 /* Clyde B. Jones Funeral Home: site styles (design preview).
    Built on the Tech Nova concept (Sep 2026): the client's burgundy (their colour since 1994),
    warm cream, gold labels, Cormorant Garamond headings and Figtree body text.
@@ -640,3 +648,13 @@ fieldset { border: 0; padding: 0; margin: 0; min-width: 0; }
   .topbar, .site-header, .action-bar, .preview-note, .site-footer, .tab-nav, form, .share-row { display: none !important; }
   body { padding: 0; background: #fff; }
 }
+
+/* ---------- Tech Nova design-preview watermark (remove at handover) ---------- */
+.tn-watermark {
+  position: fixed; inset: 0; z-index: 90; pointer-events: none;
+  background: url("../img/watermark.svg") 0 0 / 440px 300px repeat;
+  opacity: 0.13;
+  -webkit-print-color-adjust: exact; print-color-adjust: exact;
+}
+@media (max-width: 600px) { .tn-watermark { background-size: 330px 225px; } }
+@media print { .tn-watermark { display: block !important; opacity: 0.18; } }

@@ -98,9 +98,15 @@ def layout(page, body, root):
         title = f'{page["title"]} | {SITE_NAME}'
 
     return f"""<!doctype html>
+<!--
+  Clyde B. Jones Funeral Home website: DESIGN PREVIEW\n  Design, layout and code (c) 2026 Tech Nova Barbados Limited. All rights reserved.\n  Built by Tech Nova Barbados Limited, https://technovabb.com\n  This preview is not licensed for use, copying or publication by anyone,\n  including the client, until Tech Nova hands the site over in writing.\n  Client text, logo and photos remain the property of Clyde B. Jones Funeral Home Co. Ltd.
+-->
 <html lang="en-BB">
 <head>
   <meta charset="utf-8">
+  <meta name="author" content="Tech Nova Barbados Limited">
+  <meta name="copyright" content="Design and code (c) 2026 Tech Nova Barbados Limited. All rights reserved.">
+  <meta name="generator" content="Tech Nova Barbados Limited (technovabb.com)">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Design preview: keep it out of search results so it never competes with the client's real site. Remove at launch. -->
   <meta name="robots" content="noindex, nofollow">
@@ -122,7 +128,9 @@ def layout(page, body, root):
   <a class="skip-link" href="#main">Skip to main content</a>
 {ICONS}
 
-  <p class="preview-note">Design preview by Tech Nova Barbados. This is not the live Clyde B. Jones website yet. All text is a draft for the family's approval.</p>
+  <p class="preview-note">Design preview © Tech Nova Barbados Limited. Not the live Clyde B. Jones website. Design, layout and code may not be copied or reused. All text is a draft for the family's approval.</p>
+  <!-- Tech Nova watermark over every page until handover. Remove this div and the .tn-watermark CSS at launch. -->
+  <div class="tn-watermark" aria-hidden="true"></div>
 
   <div class="topbar">
     <div class="wrap">
@@ -213,7 +221,7 @@ def layout(page, body, root):
       </div>
       <div class="footer-base">
         <p>© <span data-year>2026</span> Clyde B. Jones Funeral Home Co. Ltd. All rights reserved.</p>
-        <p>Design preview by Tech Nova Barbados</p>
+        <p>Website design and build © Tech Nova Barbados Limited. Preview only.</p>
       </div>
     </div>
   </footer>
