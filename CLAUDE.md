@@ -4,6 +4,17 @@ This is the website for **Clyde B. Jones Funeral Home Co. Ltd.**, built by **Tec
 
 **This repo is public.** Never commit prices, the proposal, client contact names, call notes, account details or real family details. Those live in the private repo **Technovabb/clydebjones-funeral-home** (its `docs/brief.md` has the full brief).
 
+## STATUS: OFFLINE (14 Oct 2026)
+- The client had not replied, so Juwan asked for the preview to be taken down and the code locked.
+- `main` now holds only a holding page (`index.html`, copied to `404.html` so every old link shows it). It points people to Tech Nova (WhatsApp/phone (246) 230-8303, admin@technovabb.com).
+- The full site is saved in commit `1b87e2f` ("Add Tech Nova watermark...").
+- Juwan is making this repo **private** on GitHub.
+- **To bring it back** (only when Juwan says so):
+  1. `git log --oneline --grep "Take the preview offline"` to find the takedown commit.
+  2. `git revert --no-edit <that commit>`.
+  3. Check it in a browser, then push to the working branch and to `main`.
+  4. If the repo is private on a free GitHub plan, Pages will not publish. Juwan must make it public again, or the org needs a paid plan.
+
 ## The client (public details only)
 - Clyde B. Jones Funeral Home Co. Ltd., Top Rock, Christ Church, Barbados.
 - Founded **1948**: three generations of the Jones family. They have their own limousine fleet and an on-site mortuary.

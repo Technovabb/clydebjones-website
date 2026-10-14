@@ -1,5 +1,11 @@
 # Clyde B. Jones Funeral Home website (design preview)
 
+> **OFFLINE since 14 Oct 2026.** The client had not replied, so the preview was taken down.
+> The link now shows a "not available, contact Tech Nova" page (`index.html` and `404.html`).
+> The full site (pages, `src/`, `tools/`, `assets/`) is saved in commit `1b87e2f`.
+> To bring it back: `git revert` the commit titled "Take the preview offline", then push to `main`.
+> The notes below describe the full site.
+
 The new website for Clyde B. Jones Funeral Home Co. Ltd., Top Rock, Christ Church, Barbados. It is built by Tech Nova Barbados.
 
 **This repo is public.** It holds only the website. Client notes, the proposal and prices are kept in Tech Nova's private repo.
