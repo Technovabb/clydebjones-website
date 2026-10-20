@@ -1,0 +1,130 @@
+<!--
+title: Name of Loved One (sample tribute)
+description: Sample tribute page: obituary, service details, livestream, condolence book and flowers. A design preview by Tech Nova Barbados.
+nav: tributes
+-->
+    <!-- SAMPLE tribute. Every detail on this page is a placeholder. Never put a real family's details in this public preview. -->
+    <section class="tribute-hero">
+      <div class="wrap">
+        <a class="back" href="{{root}}tributes/"><svg class="icon" aria-hidden="true"><use href="#i-arrow-left"/></svg> All tributes</a>
+        <div class="tribute-portrait"><svg aria-hidden="true"><use href="#i-dove"/></svg></div>
+        <p class="eyebrow">In loving memory of</p>
+        <h1>Name of Loved One</h1>
+        <p class="dates">1941 – 2026</p>
+        <div class="share-row">
+          <a class="chip-btn is-primary" data-share-whatsapp href="https://wa.me/?text=https%3A%2F%2Ftechnovabb.com%2Fclydebjones-website%2Ftributes%2Fname-of-loved-one%2F" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg> Share on WhatsApp</a>
+          <a class="chip-btn" data-share-facebook href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ftechnovabb.com%2Fclydebjones-website%2Ftributes%2Fname-of-loved-one%2F" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-share"/></svg> Facebook</a>
+          <button class="chip-btn" type="button" data-copy-link><svg class="icon" aria-hidden="true"><use href="#i-link"/></svg> Copy link</button>
+          <button class="chip-btn" type="button" data-print><svg class="icon" aria-hidden="true"><use href="#i-printer"/></svg> Print</button>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap">
+      <nav class="tab-nav" aria-label="On this page">
+        <a href="#obituary">Obituary</a>
+        <a href="#service">Service details</a>
+        <a href="#livestream">Livestream</a>
+        <a href="#condolences">Condolences</a>
+        <a href="#flowers">Send flowers</a>
+      </nav>
+
+      <div class="with-aside" style="padding-bottom:80px">
+        <div>
+          <section class="tribute-section" id="obituary" aria-labelledby="obit-title">
+            <h2 id="obit-title">Obituary</h2>
+            <div class="obituary prose">
+              <p><strong>Name of Loved One</strong>, of [village], [parish], passed away peacefully on [date], aged [age].</p>
+              <p>On the live site, the family's obituary appears here as real, readable text, not as a picture. That means it can be read on any phone, found on Google, and shared on WhatsApp.</p>
+              <p>Survived by: [names of the family, as the family would like them listed].</p>
+              <p>Our staff can post a tribute like this in about ten minutes, from one simple form.</p>
+            </div>
+          </section>
+
+          <section class="tribute-section" id="service" aria-labelledby="service-title">
+            <h2 id="service-title">Service details</h2>
+            <div class="service-box">
+              <h3>Funeral service <span class="tag is-live">Livestream</span></h3>
+              <ul class="detail-list">
+                <li><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg> <span><strong>Saturday 10 October 2026</strong>, 10:00 a.m.<br><span class="muted">Viewing from 9:00 a.m.</span></span></li>
+                <li><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg> <span>[Church name], Christ Church</span></li>
+              </ul>
+              <div class="btn-row">
+                <a class="chip-btn" href="https://www.google.com/maps/search/?api=1&amp;query=Christ+Church%2C+Barbados" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg> Map</a>
+                <button class="chip-btn" type="button" data-ics data-ics-title="Funeral service: Name of Loved One" data-ics-start="20261010T140000Z" data-ics-end="20261010T160000Z" data-ics-location="[Church name], Christ Church, Barbados"><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg> Add to calendar</button>
+                <!-- The printed programme (PDF) is added by staff before the service -->
+                <span class="chip-btn" aria-disabled="true" style="opacity:.6;cursor:default"><svg class="icon" aria-hidden="true"><use href="#i-download"/></svg> Programme (added before the service)</span>
+              </div>
+            </div>
+            <div class="service-box">
+              <h3>Interment</h3>
+              <ul class="detail-list">
+                <li><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg> <span>Following the service</span></li>
+                <li><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg> <span>[Cemetery name], Christ Church</span></li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="tribute-section" id="livestream" aria-labelledby="live-title">
+            <h2 id="live-title">Livestream</h2>
+            <div class="video-frame">
+              <div>
+                <div class="play"><svg class="icon" aria-hidden="true"><use href="#i-play"/></svg></div>
+                <p><strong>The livestream starts on Saturday 10 October at 10:00 a.m.</strong></p>
+                <p class="small">Come back to this page at that time. The recording will stay here afterwards.</p>
+              </div>
+            </div>
+          </section>
+
+          <section class="tribute-section" id="condolences" aria-labelledby="cond-title">
+            <h2 id="cond-title">Condolence book</h2>
+            <p class="muted">Leave a message for the family. No account is needed. Messages appear once our staff have checked them.</p>
+            <div class="form-card" style="margin-bottom:24px">
+              <form class="form" data-preview-form>
+                <div class="form-row">
+                  <div class="field"><label for="c-name">Your name</label><input id="c-name" name="name" type="text" autocomplete="name" required></div>
+                  <div class="field"><label for="c-from">Where you are writing from <span class="hint">(optional)</span></label><input id="c-from" name="from" type="text" placeholder="For example: Toronto"></div>
+                </div>
+                <div class="field"><label for="c-msg">Your message</label><textarea id="c-msg" name="message" required></textarea></div>
+                <button class="btn btn-primary" type="submit">Sign the condolence book</button>
+                <p class="form-status" role="status"></p>
+              </form>
+            </div>
+            <article class="condolence"><p>Sample message. Our deepest sympathy to the family. May the memories you shared bring you comfort.</p><p class="who">A family friend · Christ Church</p></article>
+            <article class="condolence"><p>Sample message. Watching from abroad and holding you all in our prayers.</p><p class="who">A cousin · New York</p></article>
+            <article class="condolence"><p>Sample message. A kind neighbour who will be greatly missed.</p><p class="who">Neighbours · Top Rock</p></article>
+          </section>
+
+          <section class="tribute-section" id="flowers" aria-labelledby="fl-title">
+            <h2 id="fl-title">Send flowers</h2>
+            <p class="muted">Leave your details, and a member of our staff will contact you to arrange the flowers.</p>
+            <div class="form-card">
+              <form class="form" data-preview-form>
+                <div class="form-row">
+                  <div class="field"><label for="tf-name">Your name</label><input id="tf-name" name="name" type="text" autocomplete="name" required></div>
+                  <div class="field"><label for="tf-phone">Phone</label><input id="tf-phone" name="phone" type="tel" autocomplete="tel" required></div>
+                </div>
+                <div class="field"><label for="tf-card">Message for the card <span class="hint">(optional)</span></label><textarea id="tf-card" name="card"></textarea></div>
+                <button class="btn btn-primary" type="submit"><svg class="icon" aria-hidden="true"><use href="#i-flower"/></svg> Send flower request</button>
+                <p class="form-status" role="status"></p>
+              </form>
+            </div>
+          </section>
+        </div>
+
+        <aside class="aside-stack below-tabs" aria-label="Quick links">
+          <div class="aside-card">
+            <h2>Funeral service</h2>
+            <p><strong>Saturday 10 October 2026</strong><br>10:00 a.m.<br>[Church name], Christ Church</p>
+            <a class="btn btn-primary" href="#livestream"><svg class="icon" aria-hidden="true"><use href="#i-video"/></svg> Watch the livestream</a>
+            <a class="btn btn-outline" href="#condolences"><svg class="icon" aria-hidden="true"><use href="#i-book"/></svg> Leave a message</a>
+            <a class="btn btn-outline" href="#flowers"><svg class="icon" aria-hidden="true"><use href="#i-flower"/></svg> Send flowers</a>
+          </div>
+          <div class="aside-card is-burgundy">
+            <p class="eyebrow">Questions about this service?</p>
+            <p>Call Clyde B. Jones Funeral Home.</p>
+            <a class="btn btn-light" href="tel:+12464289332"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg> (246) 428-9332</a>
+          </div>
+        </aside>
+      </div>
+    </div>

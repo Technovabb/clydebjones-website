@@ -1,0 +1,73 @@
+<!--
+title: Tributes
+description: Search tributes and obituaries from Clyde B. Jones Funeral Home, Barbados. Find service details, watch livestreams, leave condolences and send flowers.
+nav: tributes
+-->
+    <section class="page-hero" id="search">
+      <div class="wrap">
+        <nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="{{root}}">Home</a></li><li aria-current="page">Tributes</li></ol></nav>
+        <p class="eyebrow">Tributes</p>
+        <h1>Remembering those we have cared for</h1>
+        <p class="lead">Search by name, or browse by month. Each tribute has the obituary, the service details, the livestream and a condolence book.</p>
+      </div>
+    </section>
+
+    <section class="section-tight">
+      <div class="wrap">
+        <form class="tribute-tools" role="search" id="tribute-filter">
+          <div class="field">
+            <label for="tq">Search by name</label>
+            <input id="tq" name="q" type="search" placeholder="Type a name" autocomplete="off">
+          </div>
+          <div class="field">
+            <label for="tmonth">Month</label>
+            <select id="tmonth" name="month"><option value="">All months</option></select>
+          </div>
+        </form>
+        <p class="small muted"><span class="todo-chip">Preview</span> These are sample tributes. Every name is a placeholder.</p>
+        <p class="result-count" id="tribute-count" aria-live="polite"></p>
+        <ul class="tribute-grid" id="tribute-list"></ul>
+        <div class="empty-state" id="tribute-empty" hidden>
+          <h2 style="font-size:1.8rem">No tributes found</h2>
+          <p>Check the spelling, or try just the surname. If you still cannot find a tribute, please call us on <a href="tel:+12464289332">(246) 428-9332</a>.</p>
+        </div>
+        <noscript><p>Turn on JavaScript to search tributes. <a href="{{root}}tributes/name-of-loved-one/">See a sample tribute</a>.</p></noscript>
+
+        <div class="callout" style="margin-top:40px">
+          <p><strong>Looking for an older tribute?</strong> Every tribute from our old website will be moved here, and old links will still work.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="flowers" aria-labelledby="flowers-title">
+      <div class="wrap">
+        <div class="grid-2">
+          <div>
+            <p class="eyebrow">Send flowers</p>
+            <h2 id="flowers-title">Send a floral tribute</h2>
+            <p class="lead">Flowers are a beautiful way to show your love and support, even from far away.</p>
+            <ol class="steps" style="margin-top:24px">
+              <li><h3>Tell us who they are for</h3><p>Fill in the form with the name of the person who has died, and your details.</p></li>
+              <li><h3>We will contact you</h3><p>A member of our staff will call or email you to arrange the flowers and your message for the card.</p></li>
+            </ol>
+            <!-- TODO: florist's shop link from the client, if they want to send people straight to the florist -->
+          </div>
+          <div class="form-card">
+            <h3>Flower request</h3>
+            <form class="form" data-preview-form>
+              <div class="field"><label for="fl-for">Flowers for the funeral of</label><input id="fl-for" name="for" type="text" placeholder="Name of the person who has died" required></div>
+              <div class="form-row">
+                <div class="field"><label for="fl-name">Your name</label><input id="fl-name" name="name" type="text" autocomplete="name" required></div>
+                <div class="field"><label for="fl-phone">Phone</label><input id="fl-phone" name="phone" type="tel" autocomplete="tel" required></div>
+              </div>
+              <div class="field"><label for="fl-email">Email <span class="hint">(optional)</span></label><input id="fl-email" name="email" type="email" autocomplete="email"></div>
+              <div class="field"><label for="fl-card">Message for the card <span class="hint">(optional)</span></label><textarea id="fl-card" name="card"></textarea></div>
+              <button class="btn btn-primary" type="submit"><svg class="icon" aria-hidden="true"><use href="#i-flower"/></svg> Send flower request</button>
+              <p class="form-status" role="status"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <script src="{{root}}assets/js/tributes-sample.js" defer></script>

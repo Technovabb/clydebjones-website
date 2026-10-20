@@ -1,0 +1,25 @@
+<form class="form" data-preview-form>
+              <div class="form-row">
+                <div class="field"><label for="plan-name">Your name</label><input id="plan-name" name="name" type="text" autocomplete="name" required></div>
+                <div class="field"><label for="plan-phone">Phone</label><input id="plan-phone" name="phone" type="tel" autocomplete="tel" required></div>
+              </div>
+              <div class="field"><label for="plan-email">Email <span class="hint">(optional)</span></label><input id="plan-email" name="email" type="email" autocomplete="email"></div>
+              <fieldset class="field">
+                <legend>I am planning for</legend>
+                <div class="choice-row">
+                  <label class="choice"><input type="radio" name="for" value="myself" checked><span>Myself</span></label>
+                  <label class="choice"><input type="radio" name="for" value="loved-one"><span>A loved one</span></label>
+                </div>
+              </fieldset>
+              <div class="field">
+                <label for="plan-time">Best time to call</label>
+                <select id="plan-time" name="time">
+                  <option>Morning (9 a.m. to 12 noon)</option>
+                  <option>Afternoon (12 noon to 5 p.m.)</option>
+                  <option>Any time in office hours</option>
+                </select>
+              </div>
+              <button class="btn btn-primary" type="submit">Ask us to call me</button>
+              <p class="form-status" role="status"></p>
+              <p class="form-note">We only use your details to call you about your plan.</p>
+            </form>

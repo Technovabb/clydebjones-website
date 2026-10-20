@@ -1,0 +1,52 @@
+<!--
+title: Cars and Limousine
+description: Executive car and limousine service from Clyde B. Jones Funeral Home, Barbados. Our limousine and town cars are also available for private functions.
+nav: services
+-->
+    <section class="page-hero">
+      <div class="wrap">
+        <nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="{{root}}">Home</a></li><li><a href="{{root}}services/">Services</a></li><li aria-current="page">Cars &amp; limousine</li></ol></nav>
+        <p class="eyebrow">Cars &amp; limousine</p>
+        <h1>Executive cars and limousine</h1>
+        <p class="lead">Our own fleet, kept to the highest standard, for funerals and for private functions.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="with-aside">
+          <div class="prose">
+            <!-- TODO: fleet photos from the client -->
+            <div class="photo-slot on-light" style="margin-bottom:28px"><div><svg aria-hidden="true"><use href="#i-camera"/></svg>Fleet photo to come</div></div>
+
+            <h2>Our fleet</h2>
+            <p>Clyde B. Jones Funeral Home has a top-of-the-line fleet, including a limousine and town cars.</p>
+            <p>Cars have been part of our service for a long time. We built our first hearse in the late 1950s, and imported our first Cadillac hearse in 1960.</p>
+
+            <h2>For private functions too</h2>
+            <p>Our limousine and town cars are also available for private functions.</p>
+            <p>For prices, and to check that a car is free on your date, please call us or send a request below.</p>
+
+            <div class="form-card" style="margin-top:28px">
+              <h3>Ask about a car</h3>
+              <form class="form" data-preview-form>
+                <div class="form-row">
+                  <div class="field"><label for="car-name">Your name</label><input id="car-name" name="name" type="text" autocomplete="name" required></div>
+                  <div class="field"><label for="car-phone">Phone</label><input id="car-phone" name="phone" type="tel" autocomplete="tel" required></div>
+                </div>
+                <div class="form-row">
+                  <div class="field"><label for="car-date">Date needed</label><input id="car-date" name="date" type="date"></div>
+                  <div class="field"><label for="car-type">For</label><select id="car-type" name="type"><option>A funeral</option><option>A private function</option></select></div>
+                </div>
+                <div class="field"><label for="car-msg">Anything else? <span class="hint">(optional)</span></label><textarea id="car-msg" name="message"></textarea></div>
+                <button class="btn btn-primary" type="submit">Send request</button>
+                <p class="form-status" role="status"></p>
+              </form>
+            </div>
+          </div>
+          {{> services-aside}}
+        </div>
+      </div>
+    </section>
+
+{{> cta-band}}

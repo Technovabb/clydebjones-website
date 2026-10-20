@@ -1,0 +1,87 @@
+<!--
+title: Contact Us
+description: Contact Clyde B. Jones Funeral Home, Top Rock, Christ Church, Barbados. Call (246) 428-9332, or (716) 262-2407 from the USA and Canada. Office hours, map and contact form.
+nav: contact
+-->
+    <section class="page-hero">
+      <div class="wrap">
+        <nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="{{root}}">Home</a></li><li aria-current="page">Contact</li></ol></nav>
+        <p class="eyebrow">Contact us</p>
+        <h1>We are here when you need us</h1>
+        <p class="lead">The quickest way to reach us is by phone. Tap a number below to call.</p>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="tel:+12464289332"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg> Call (246) 428-9332</a>
+          <a class="btn btn-outline" href="tel:+17162622407">USA &amp; Canada (716) 262-2407</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-tight">
+      <div class="wrap">
+        {{> contact-cards}}
+      </div>
+    </section>
+
+    <section class="section section-alt" id="visit" aria-labelledby="visit-title">
+      <div class="wrap">
+        <div class="grid-2">
+          <div>
+            <p class="eyebrow">Visit us</p>
+            <h2 id="visit-title">Top Rock, Christ Church</h2>
+            <p class="lead">Clyde B. Jones Funeral Home Co. Ltd.<br>Top Rock, Christ Church BB15027, Barbados</p>
+            <table class="hours" aria-label="Office hours">
+              <tbody>
+                <tr><th scope="row">Monday to Friday</th><td>9:00 a.m. to 5:00 p.m.</td></tr>
+                <tr><th scope="row">Saturday</th><td>Closed</td></tr>
+                <tr><th scope="row">Sunday</th><td>Closed</td></tr>
+              </tbody>
+            </table>
+            <p style="margin-top:16px"><span class="todo-chip">After-hours line: number to come</span></p>
+            <p style="margin-top:20px"><a class="btn btn-primary" href="https://www.google.com/maps/search/?api=1&amp;query=Clyde+B.+Jones+Funeral+Home%2C+Top+Rock%2C+Christ+Church%2C+Barbados" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg> Get directions in Google Maps</a></p>
+          </div>
+          <iframe class="map-frame" title="Map showing Clyde B. Jones Funeral Home, Top Rock, Christ Church" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Clyde%20B.%20Jones%20Funeral%20Home%2C%20Top%20Rock%2C%20Christ%20Church%2C%20Barbados&amp;z=15&amp;output=embed"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="write" aria-labelledby="write-title">
+      <div class="wrap">
+        <div class="grid-2">
+          <div>
+            <p class="eyebrow">Write to us</p>
+            <h2 id="write-title">Send us a message</h2>
+            <p class="lead">We reply during office hours. If it is urgent, please call us on <a href="tel:+12464289332">(246) 428-9332</a>.</p>
+            <ul class="detail-list" style="margin-top:24px">
+              <li><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg> <a href="mailto:info@clydebjonesfuneralhome.com" style="word-break:break-all">info@clydebjonesfuneralhome.com</a></li>
+              <li id="whatsapp"><svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg> <span>WhatsApp: <span class="todo-chip">number to come from the funeral home</span></span></li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-printer"/></svg> <span>Fax: (246) 428-5768</span></li>
+            </ul>
+          </div>
+          <div class="form-card">
+            <form class="form" data-preview-form>
+              <div class="form-row">
+                <div class="field"><label for="ct-name">Your name</label><input id="ct-name" name="name" type="text" autocomplete="name" required></div>
+                <div class="field"><label for="ct-phone">Phone</label><input id="ct-phone" name="phone" type="tel" autocomplete="tel" required></div>
+              </div>
+              <div class="field"><label for="ct-email">Email <span class="hint">(optional)</span></label><input id="ct-email" name="email" type="email" autocomplete="email"></div>
+              <div class="field">
+                <label for="ct-topic">What is it about?</label>
+                <select id="ct-topic" name="topic">
+                  <option>Arranging a funeral</option>
+                  <option>Planning ahead</option>
+                  <option>A tribute or livestream</option>
+                  <option>Flowers</option>
+                  <option>Caskets and urns</option>
+                  <option>Headstones and gravework</option>
+                  <option>Cars and limousine</option>
+                  <option>Something else</option>
+                </select>
+              </div>
+              <div class="field"><label for="ct-msg">Your message</label><textarea id="ct-msg" name="message" required></textarea></div>
+              <button class="btn btn-primary" type="submit">Send message</button>
+              <p class="form-status" role="status"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
